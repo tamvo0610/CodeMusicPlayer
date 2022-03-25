@@ -1,0 +1,107 @@
+
+/* khai báo biến define để sao gọi tên dùng cho nhanh */
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #ED2B91;
+    --sub-color: #6A39AF;
+    
+    --header-color-0: #37075d;
+    --header-color-1: #282828;
+    --header-color-2: #061D50;
+    --header-color-3: #E7DFDD;
+    --header-color-4: #B2D8DB;
+    --header-color-5: #F9DBDB;
+    --header-color-6: #BAB8C3;
+    --header-color-7: #FFFFFF;
+
+    --option-color-0: #816399;
+    --option-color-1: #787878;
+    --option-color-2: #637191;
+    --option-color-3: #E5E2E0;
+    --option-color-4: #D9ECEE;
+    --option-color-5: #EEE0DC;
+    --option-color-6: #C9C8CF;
+    --option-color-7: #FFFFFF;
+
+    --sidebar-bg: rgba(255, 255, 255, 0.05);
+    --active-color: rgba(255, 255, 255, 0.1);
+    --blur-color: rgba(255, 255, 255, 0.5);
+
+    --side-padding: 28px;
+    --next-song-width: 329px;
+    --next-song-width-laptop: 250px;
+    --sidebar-width: 240px;
+    --music-control-height: 90px;
+    --header-height: 70px;
+    --search-width: 540px;
+    --search-height: 40px;
+    --profile-height: 180px;
+}
+
+.hover:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.hiden {
+    display: none;
+}
+
+.white-color {
+    color: #fff;
+}
+
+/* seleter * apply tất cả css lên tất cả phần tử html */
+* {
+    /* có tính chất kế thừa thẻ cha, cứ ghi vào đây sau giải thích */
+    box-sizing: inherit;
+}
+
+html {
+    /* font-size 62.5% thì sai 1 rem = 10px */
+    font-size: 62.5%;
+    /* đặt chiều cao chữ cho all page, chữ nào chiều cao khác set sau */
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    /* box-sizing: để không bị độn chiều cao box khi padding */
+    box-sizing: border-box;
+}
+
+span {
+    display: block;
+}
+
+/* ul */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* -- css Scroll-Bar --  */
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+  
+/* background */
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+/* scrollBar */
+::-webkit-scrollbar-thumb {
+    background: transparent; 
+}
+
+/* scrollBar on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #7b47a5;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+

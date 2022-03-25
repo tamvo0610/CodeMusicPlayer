@@ -1,0 +1,98 @@
+<!-- DATE MAKE: 4/12/2021 -->
+<!-- NAME: VAN SON NGUYEN -->
+<!-- 1995 - 26YEARS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Code Music Player</title>
+    <link rel="icon" href="./assets/img/icon-home/small-logo.svg" type="image/gif" sizes="16x16">
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- css grid để kết hợp chia khung và responsive -->
+    <!-- <link rel="stylesheet" href="./assets/css/grid.css"> -->
+    <!-- css mấy cái chung ban đầu -->
+    <!-- <link rel="stylesheet" href="./assets/css/base.css"> -->
+    <!-- css chính -->
+    <!-- <link rel="stylesheet" href="./assets/css/main.css"> -->
+    <!-- css để responsive trên các thiết bị -->
+    <!-- <link rel="stylesheet" href="./assets/css/responsive.css"> -->
+    <!-- nếu trình duyệt IE < 9 thì comment dưới sẽ thành code chạy dc, code scrip dước có chức năng để chạy dc media-query để responsive trên trình chuyệt thấp IE < 9 -->
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.1/respond.js"></script>
+    <![endif]-->
+    <!-- dùng google font roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- icon fontawesome -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+</head>
+<body>
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+          <!-- Header -->
+          <header>
+            <input id="volume" class="volume" type="range" value="100" style="cursor: pointer">
+            <h4>Now playing:</h4>
+            <h2>String 57th & 9th</h2>
+          </header>
+      
+          <!-- CD -->
+          <div class="cd">
+            <div class="cd-thumb">
+            </div>
+          </div>
+          
+          <!-- Control -->
+          <div class="control">
+            <div class="btn btn-repeat">
+              <i class="fas fa-redo"></i>
+            </div>
+            <div class="btn btn-prev">
+              <i class="fas fa-step-backward"></i>
+            </div>
+            <div class="btn btn-toggle-play">
+              <i class="fas fa-pause icon-pause"></i>
+              <i class="fas fa-play icon-play"></i>
+            </div>
+            <div class="btn btn-next">
+              <i class="fas fa-step-forward"></i>
+            </div>
+            <div class="btn btn-random">
+              <i class="fas fa-random"></i>
+            </div>
+          </div>
+      
+          <input id="progress" class="progress" type="range" value="0" min="0" max="100" style="cursor: pointer">
+      
+          <audio id="audio" src=""></audio>
+          <div class="timer">
+            <div class="duration-song" style="float:left"></div>
+            <div class="currenttime-song" style="float:right"></div>
+          </div>
+        </div>
+      
+        <!-- Playlist -->
+        <div class="playlist">
+        </div>
+      </div>
+</body>
+<script src="./assets/javascript/index.js">
+    /** 
+     * Render Songs
+     * Scroll Top
+     * Play/Pause/Seek
+     * CD rotate
+     * Next/prev
+     * Random
+     * Next/Repeat
+     * Active Song
+     * Scroll active song into view
+     * Play song when click
+    */
+</script>
+</html>
